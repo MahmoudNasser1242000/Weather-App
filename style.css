@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.navbar {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #1e202bdc !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+}
+
+.logo {
+    font-size: 60px;
+}
+
+.title {
+    height: 55px;
+}
+
+.tagline {
+    font-size: 10px;
+}
+
+.navbar-nav {
+    width: 65%;
+}
+
+.navbar-nav li {
+    text-align: center;
+}
+
+.navbar-nav li a {
+    display: inline-block !important;
+    color: white !important;
+    padding: 2px 25px !important;
+    font-size: 15px;
+    border-radius: 30px;
+    transition: all 0.4s;
+    border: 2px solid transparent;
+}
+.navbar-nav li a:hover {
+    color: #FFB900 !important;
+    border: 2px solid #FFB900;
+    border-radius: 30px;
+}
+
+.navbar-nav li a.active {
+    color: #FFB900 !important;
+    border: 2px solid #FFB900;
+    border-radius: 30px;
+}
+
+.weather {
+    background-image: url("images/cdc22c0ea960467d9593f925e584e44e.jpeg");
+    background-position: center;
+    background-size: cover;
+    /* padding: 50px 0; */
+    padding-top: 90px;
+    height: 100% !important;
+}
+
+.show-weather {
+    background-color: #1e202b59;
+    height: auto !important;
+    padding-top: 70px !important;
+}
+
+input[type="search"] {
+    padding: 15px 50px 15px 20px;
+    background-color: #1E202B;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+form button {
+    position: absolute;
+    right: 15px;
+    height: 45px;
+    top: 5px;
+    padding: 0 40px !important;
+    border-radius: 30px !important;
+    /* transform: translateY(-50%); */
+}
+
+.card {
+    background-color: #3235444d !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+}
+.card-middle {
+    background-color: #262936de !important;
+}
+
+.card-body {
+    padding: 30px 20px;
+}
+
+.card-body p {
+    color: #BFC1C8 !important;
+}
+
+.card-header {
+    background-color: #2D303D !important;
+    color: #BFC1C8 !important;
+    border-radius: 0 !important;
+}
+.card-header-middele {
+    background-color: #222530 !important;
+}
+
+.country {
+    display: inline-block;
+    font-size: 18px;
+    color: #bfc1c8 !important;
+    font-weight: bold;
+}
+
+.flag {
+    width: 20px;
+    height: 15px;
+}
+
+.first-deg {
+    font-size: 80px;
+    color: white !important;
+}
+
+.type {
+    display: inline-block;
+    color: #FFB900 !important;
+}
+
+.weather-info {
+    color: #BFC1C8 !important;
+}
+
+/* =======================media query */
+@media screen and (max-width: 768px) {   
+    body {
+        height: 230vh !important;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {   
+    .weather {
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 1088px) {   
+    .card-body {
+        height: 360px !important;
+    }
+}
+@media screen and (min-width: 1089px) {   
+    .card-body {
+        height: 300px !important;
+    }
+}
+/* =======================media query */

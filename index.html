@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- =========bootstrap========= -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- =========bootstrap========= -->
+    <title>Weather App</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="logo">&#x26C5;</span>
+                <span class="title">
+                    <p class="fw-bold text-white m-0">Weather</p>
+                    <p class="text-secondary m-0 tagline">tagline goes here</p>
+                </span>
+            </a>
+            <button class="navbar-toggler text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNavDropdown">
+                <ul class="navbar-nav d-flex justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="weather d-flex justify-content-center align-items-center h-100">
+        <div class="show-weather row w-100 h-100 mt-5 my-5 my-lg-0">
+            <form class="col-md-10 position-relative mx-auto mb-3">
+                <input type="search" name="search" class="w-100" placeholder="Find the location...">
+                <button class="btn btn-warning fw-bold">Find</button>
+            </form>
+            <div class="col-md-10 mx-auto">
+                <section class="row g-0 weather-container">
+                    
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========bootstrap========= -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- =========bootstrap========= -->
+    <script src="main.js"></script>
+</body>
+
+</html>
