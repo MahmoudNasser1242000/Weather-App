@@ -155,11 +155,18 @@ search.addEventListener("keyup", async (e)=> {
     const res = await data.json();
 
     let _country;
+    let _countryIcon;
     if (res.length !== 0) {
         _country = res[0].name;
+        if (res[0].name === country) {
+            _countryIcon = countryIcon;
+        } else {
+            _countryIcon = "";
+        }
     } else {
         _country = country;
+        _countryIcon = countryIcon;
     }
 
-    showWeather(_country,"days=3");
+    showWeather(_country, "days=3", _countryIcon);
 })
